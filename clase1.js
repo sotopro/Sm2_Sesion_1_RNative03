@@ -213,3 +213,66 @@ fishs.lastIndexOf('barracuda');
 console.log('fish indexOf', fishs.indexOf('barracuda'))
 
 console.log('fish lastIndexOf', fishs.lastIndexOf('barracuda'))
+
+
+// forEarch()
+fishs.forEach(individualFish => {
+    console.log('individualFish', individualFish)
+})
+
+for (let i = 0; i < fishs.length; i++) {
+    console.log('for loop fishs',fishs[i]);
+}
+
+// map()
+
+let printFish = fishs.map(individualFish => {
+    console.log(individualFish);
+})
+
+// pluralize all items
+
+let pluralFish = fishs.map(individualFish => {
+    console.log('individualFish', individualFish)
+    return `${individualFish}s`
+})
+console.log('fishs', fishs)
+console.log('pluralFish', pluralFish)
+
+// filter()
+
+let filterList = seaCreatures.filter(creature => {
+    return creature[0] === 's';
+})
+
+console.log('seaCreatures', seaCreatures);
+
+console.log('filterList seaCreatures', filterList);
+
+// reduce
+
+let sum = numbers.reduce((a,b) => {
+    return a + b;
+});
+console.log('numbers', numbers);
+console.log('sum', sum);
+
+// find
+
+let seaCreatures2 = [ "whale", "octopus", "shark", "cuttlefish", "flounder", "octopus" ];
+
+const isCephalopod = cephalopod => {
+    return ['cuttlefish', 'octopus'].includes(cephalopod);
+}
+
+seaCreatures2.find(isCephalopod);
+
+console.log('seaCreatures2.find(isCephalopod)', seaCreatures2.find(isCephalopod))
+
+// findIndex()
+
+
+seaCreatures2.findIndex(isCephalopod);
+
+console.log('seaCreatures2.findIndex(isCephalopod)', seaCreatures2.findIndex(isCephalopod))
+

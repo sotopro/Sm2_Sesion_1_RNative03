@@ -171,3 +171,45 @@ const sortNumerically = (a,b) => {
 numbers.sort(sortNumerically);
 
 console.log('numbers.sort(sortNumerically)', numbers);
+
+// concat()
+
+let monovalves = ['conch', 'abalone'];
+let bivalves = ['oyster', 'mussel', 'clam'];
+
+let shellfishs = bivalves.concat(monovalves);
+
+console.log('shellfishs', shellfishs);
+
+// join()
+
+let shellfishString = shellfishs.join('|');
+
+console.log('shellfishString', shellfishString);
+
+let address = ['Lima', 'Lima', 'San Miguel'];
+
+let fullAddress = address.join('|');
+
+console.log('fullAddress', fullAddress);
+
+// slice
+
+
+let fishArray = [ "piranha", "barracuda", "koi", "eel", 'shark' ];
+
+
+let fishWithShortNames = fishArray.slice(2,4);
+
+console.log('fishWithShortNames slices', fishWithShortNames);
+
+// lastIndexOf()
+
+let fishs = [ "piranha", "barracuda", "koi", "eel", 'barracuda', 'shark' ];
+
+console.log('fishs', fishs)
+fishs.lastIndexOf('barracuda');
+
+console.log('fish indexOf', fishs.indexOf('barracuda'))
+
+console.log('fish lastIndexOf', fishs.lastIndexOf('barracuda'))

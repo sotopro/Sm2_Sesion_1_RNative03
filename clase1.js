@@ -131,3 +131,43 @@ let mammals = [
 for (let mammal of mammals) {
     console.log('mammal', mammal);
 }
+
+// isArray
+
+let fish = ['1 piranha', '$eel', 'koi', 'barracuda', 'Eel'];
+
+console.log('fish isArray', Array.isArray(fish));
+
+// reverse()
+
+fish.reverse();
+
+console.log('reverse array', fish);
+
+// fill
+
+// fish.fill('shark');
+
+// console.log('fish.fill', fish);
+
+fish.fill('shark', 1, 3);
+console.log('fish.fill 1-2', fish);
+
+// sort()
+
+fish.sort();
+
+console.log('fish.sort()', fish);
+
+let numbers = [42, 23, 16, 15, 8, 4];
+
+numbers.sort();
+
+console.log('numbers.sort()', numbers);
+
+const sortNumerically = (a,b) => {
+    return a - b
+}
+numbers.sort(sortNumerically);
+
+console.log('numbers.sort(sortNumerically)', numbers);
